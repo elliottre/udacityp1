@@ -1,68 +1,100 @@
-    .container {
-        border-radius: 10px;
-        border: 1px solid whitesmoke;
-        box-shadow: 2px 2px 2px #888888;
-        background-color: whitesmoke
-    }
-    
-    body {
-        background-color: lightblue;
-        display: grid;
-        grid-template-columns: 1/8vw 1/8vw 1/8vw 1/8vw 1/8vw 1/8vw 1/8vw 1/8vw;
-        grid-template-rows: 25vh 60vh 15vh;
-        grid-template-areas: "blank logo top top top top top empty" "blank side middle middle middle middle middle empty" "none none foot foot foot foot foot empty";
-        grid-gap: 10px;
-    }
-    
-    .tab {
-        display: inline;
-    }
-    
-    .logo {
-        grid-area: logo;
-        background-image: url("images/472px-Northern_Hemisphere_Azimuthal_projections.svg.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    
-    .header {
-        grid-area: top;
-        display: flex;
-        flex-direction: column;
-        padding-left: 30px;
-        justify-content: center;
-    }
-    
-    .side {
-        grid-area: side;
-        text-align: justify;
-    }
-    
-    .entries {
-        list-style: none;
-    }
-    
-    .main {
-        grid-area: middle;
-        overflow: scroll;
-    }
-    
-    .one,
-    .two,
-    .three {
-        padding-left: 30px;
-    }
-    
-    .footer {
-        grid-area: foot;
-    }
-    
-    .title {
-        font-size: large;
-    }
-    
-    .icon {
-        display: inline;
-        list-style: none;
-    }
+@import url('https://fonts.googleapis.com/css?family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+.container {
+    border-radius: 10px;
+    border: 1px solid whitesmoke;
+    box-shadow: 2px 2px 2px #888888;
+    background-color: whitesmoke;
+    color: lightblue;
+}
+
+body {
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 1/8vw 1/8vw 1/8vw 1/8vw 1/8vw 1/8vw 1/8vw 1/8vw;
+    grid-template-rows: 25vh 60vh 15vh;
+    grid-template-areas: "blank logo top top top top top empty" "blank side middle middle middle middle middle empty" "none none foot foot foot foot foot empty";
+    grid-gap: 10px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.tab {
+    display: inline;
+}
+
+.logo {
+    grid-area: logo;
+    background-image: url("images/472px-Northern_Hemisphere_Azimuthal_projections.svg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header {
+    grid-area: top;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    justify-content: center;
+}
+
+.side {
+    grid-area: side;
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    width: 150px;
+}
+
+.entries {
+    list-style: none;
+}
+
+.main {
+    grid-area: middle;
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.one,
+.two,
+.three {
+    padding-left: 30px;
+}
+
+.footer {
+    grid-area: foot;
+}
+
+.title {
+    font-size: large;
+}
+
+.icon {
+    display: inline;
+    list-style: none;
+}
+
+.card {
+    width: 300px;
+    height: 500px;
+    margin: 10px;
+}
+
+.image {
+    width: 100%;
+    height: 300px;
+}
+
+.info {
+    border: 1px dotted grey;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
