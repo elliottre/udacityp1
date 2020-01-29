@@ -98,3 +98,15 @@ img {
     height: 100%;
     width: 100%;
 }
+
+@media (max-width:500px) {
+    .side {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+    .main {
+        justify-content: center;
+    }
+}
